@@ -1,0 +1,176 @@
+/* Global styles using :root */
+:root {
+    /* Color variables */
+    --primary-color: #001A64;        
+    --accent-color:  #F4F6FC;       
+    --neutral-color: #DDE7E8; 
+    --button-color: #2B4257;          
+    --text-color:  #2B4257;     
+  
+    /* Font size variables */
+    --base-font-size: 16px;
+  
+    /* Spacing variables */
+    --padding-small: 0.5rem;
+    --padding-medium: 1rem;
+    --padding-large: 2rem;
+  }
+  
+  /* Apply global styles */
+  body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--neutral-color);
+  }
+  
+  .landing {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Change height to min-height */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .header-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+  }
+  
+  .header-content img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .header-content p {
+    margin-top: 0.5rem; /* Add margin top to create space between h1 and p */
+    font-size: 1.3rem;
+    background-color: var(--accent-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .buttonContainer link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Make input and button responsive */
+  input[type="text"],
+  .header-content button {
+    background-color: var(--button-color);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  /* Featured destinations styles */
+  .featured-destinations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    font-size: 1rem;
+    max-width: 100%; /* Ensure it doesn't exceed the width of the screen */
+    text-align: center; /* Center the text */
+  }
+  
+  .featured-destinations h2 {
+    width: 100%; /* Make the h2 element take up the full width */
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .featured-destinations h3,p {
+    margin: 0px;
+  }
+  .destination-card {
+    padding: var(--padding-medium);
+    border-radius: 6px;
+    border-style: solid;
+    margin: 1rem 1rem 1rem 0;
+    max-width: 300px;
+    flex: 1;
+    background-color: var(--accent-color);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .box-wrapper {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding-left: 15px;
+    width: 1000px;
+    background-color: var(--accent-color);
+    border-radius: 25px;
+    border: 2px solid var(--button-color);
+  }
+  
+  .destination-card img {
+    max-width: 100%;
+    border-radius: 6px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .header-content h1 {
+      font-size: 2rem;
+    }
+  
+    .header-content p {
+      font-size: 1rem;
+    }
+  
+    .featured-destinations {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .footer-button {
+    color: #2B4257;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .footer .footer-button button:hover {
+    background-color: #001A64; /* Adjust hover color */
+  }
+  
+  .linkButton {
+    text-decoration: none;
+    color: white;
+  }

@@ -1,0 +1,46 @@
+.community-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.community-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post-form {
+    margin-bottom: 20px;
+}
+
+.post-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    resize: none;
+}
+
+.post-form button {
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post-list {
+    margin-top: 20px;
+}
+
+.post-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.post-item p {
+    margin: 0;
+}
